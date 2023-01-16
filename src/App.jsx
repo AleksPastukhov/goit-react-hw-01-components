@@ -1,9 +1,11 @@
 import Profile from './components/Profile';
 import user from './data/user.json';
-import Statistics from './components/Statistics';
+// import Statistics from './components/Statistics';
 import data from './data/data.json';
-// import from
-// import from
+// import StatisticsList from './components/StatisticsList';
+import Statistics1 from './components/Statistics1';
+import FriendList from './components/FriendList';
+import friends from './data/friends.json';
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics items={data} />
+      <Statistics1 title="Upload stats" stats={data} />
+      <FriendList friends={friends} />;
     </div>
   );
 }
