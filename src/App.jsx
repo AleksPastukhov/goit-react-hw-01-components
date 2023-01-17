@@ -9,7 +9,7 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
 
 function App() {
   return (
-    <div>
+    <>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -23,7 +23,7 @@ function App() {
       {/* <Statistics stats={data} /> */}
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </>
   );
 }
 
