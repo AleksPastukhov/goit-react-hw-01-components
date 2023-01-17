@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Statistics1({ title, stats = [] }) {
+function Statistics({ title, stats = [] }) {
   return (
     <section className="statistics">
       <h2 className="title">{title}</h2>
@@ -16,7 +16,7 @@ function Statistics1({ title, stats = [] }) {
   );
 }
 
-Statistics1.propTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
@@ -27,4 +27,4 @@ Statistics1.propTypes = {
   ),
 };
 
-export default Statistics1;
+export default Statistics;
